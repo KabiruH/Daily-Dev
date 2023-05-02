@@ -41,6 +41,8 @@ function Signup({ handleLogin }) {
               response.json().then((err) => setError(err.errors));
             }
           })
+
+          
           .catch(() => {
             setIsLoading(false);
             setError('An unexpected error occurred.');
